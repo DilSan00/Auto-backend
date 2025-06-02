@@ -9,10 +9,7 @@ import { AutoModule } from './modules/auto/auto.module';
     AuthModule,
     UsersModule,
     AutoModule,
-    MongooseModule.forRoot(
-      process.env.MONGO_URI ||
-        'mongodb+srv://DilSan:smodsmod@cluster0.xo3knu1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
-    ),
+    MongooseModule.forRoot('mongodb://localhost:27017/auto'),
   ],
 })
 export class AppModule {}
